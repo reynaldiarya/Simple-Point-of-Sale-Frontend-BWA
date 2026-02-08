@@ -1,42 +1,61 @@
-# fe-pos
+# Simple Point of Sale (POS) Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern Point of Sale (POS) frontend application built with Vue 3, TypeScript, Vite, Pinia, and TailwindCSS. This project is developed following the course:  
+[Full-Stack Laravel 12, Vue 3, TypeScript: Bikin Aplikasi POS Sederhana](https://buildwithangga.com/kelas/laravel-12-vue-3-typescript-bikin-aplikasi-pos-sederhana)
 
-## Recommended IDE Setup
+## Features
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- User Authentication (Login)
+- Admin Dashboard
+- Product Management (Create, Edit, Delete, View)
+- Product Categories Management
+- Customer Management
+- Point of Sale (POS) Interface
+- Transaction History
+- Responsive UI with TailwindCSS & PrimeVue
 
-## Recommended Browser Setup
+## Project Structure
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-    - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-    - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-    - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-    - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+src/
+  api/             # API services (Axios instances, endpoints)
+  assets/          # Static assets (images, fonts, etc.)
+  components/      # Reusable UI components
+  layout/          # Main layouts (App, Auth, Dashboard)
+  pages/           # Main application pages (Views)
+  router/          # Routing configuration
+  stores/          # State management (Pinia)
+  types/           # TypeScript interfaces and types
 ```
 
-### Compile and Hot-Reload for Development
+## Getting Started
 
-```sh
-npm run dev
-```
+1. Clone this repository
+2. Install dependencies:
 
-### Type-Check, Compile and Minify for Production
+    ```sh
+    npm install
+    ```
 
-```sh
-npm run build
-```
+3. Start the development server:
+
+    ```sh
+    npm run dev
+    ```
+
+4. Build for production:
+
+    ```sh
+    npm run build
+    ```
+
+## Tech Stack
+
+- [Vue 3](https://vuejs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [PrimeVue](https://primevue.org/)
+- [Axios](https://axios-http.com/)
